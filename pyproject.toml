@@ -1,0 +1,17 @@
+[project]
+name = "sqd2md"
+version = "1.0.0"
+description = "Unpack Carnet .sqd notes into Markdown"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+sqd2md = "sqd2md.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
